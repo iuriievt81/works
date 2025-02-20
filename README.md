@@ -1,4 +1,4 @@
-Hello! I'm Radek, a passionate and dedicated Web & Mobile App Developer with over 3 years of experience in building dynamic, user-friendly applications and websites. My expertise spans both front-end and back-end development, focusing on creating high-quality digital products that provide seamless user experiences.
+Hello! I'm Iurii, a passionate and dedicated Web & Mobile App Developer with over 3 years of experience in building dynamic, user-friendly applications and websites. My expertise spans both front-end and back-end development, focusing on creating high-quality digital products that provide seamless user experiences.
 
 I specialize in Swift, JavaScript, HTML/CSS, and frameworks such as React, Django, and Angular. Whether it's a responsive website or a fully integrated mobile app, I strive to deliver intuitive and functional solutions.
 
