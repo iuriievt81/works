@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;
+}
+
+
+#track-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#track-container {
+    width: 100%;
+    height: 500px;
+    background-color: #222;
+}
+
+
+
+#news-section {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#news-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #news-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+#about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#about-section img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#races-section {
+    padding: 50px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+#races-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#races-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.race-card {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.race-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.race-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.race-card button {
+    background-color: #f1c40f;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.race-card button:hover {
+    background-color: #e67e22;
+}
+
+#stats-section {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#race-stats div {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+
+
+h1 {
+    font-size: 36px;
+    color: #ffcc00; 
+    margin-bottom: 20px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    #game-container {
+        width: 100%;
+        height: auto;
+        padding-bottom: 56.25%; 
+        position: relative;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    color: #ffcc00;
+}
+
+.main h1{
+    padding-top: 100px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+
+
+#game-container {
+    width: 800px;
+    height: 600px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
