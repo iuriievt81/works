@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня</title>
+    <link rel="stylesheet" href="/src/style/style.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="/src/sets/videocoffee.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
+    <header>
+        <img src="/src/sets/logo.svg" alt="Логотип Кофейни" class="logo">
+        <a href="cart.html" class="cart-button">🛒 (<span id="cart-count">0</span>)</a>
+    </header>
+
+    <section id="catalog">
+        <h2>Каталог тортов</h2>
+        <div class="cake-cards">
+            
+            <div class="cake-card">
+                <img src="/src/sets/cakeBrauni.svg" alt="Брауни">
+                <h3>Брауни</h3>
+                <p class="price">Цена: 2000 руб.</p>
+                <button class="btn add-to-cart" data-name="Брауни" data-price="1000">Добавить в корзину</button>
+            </div>
+            <div class="cake-card">
+                <img src="/src/sets/cakeMedovik.svg" alt="Медовик">
+                <h3>Медовик</h3>
+                <p class="price">Цена: 2200 руб.</p>
+                <button class="btn add-to-cart" data-name="Медовик" data-price="1200">Добавить в корзину</button>
+            </div>
+            <div class="cake-card">
+                <img src="/src/sets/cakeNapolion.svg" alt="Наполеон">
+                <h3>Наполеон</h3>
+                <p class="price">Цена: 2200 руб.</p>
+                <button class="btn add-to-cart" data-name="Наполеон" data-price="1500">Добавить в корзину</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>ул. Челюскинцев, 28, Тюмень</p>
+        <p>Часы работы: 7:00 - 21:00</p>
+        <p>Часы работы суббота, воскрнесенье: 10:00 - 22:00</p>
+        <p>Телефон: +7 968 006 24 16</p>
+    </footer>
+
+    
+    <div id="addons-modal" class="addons-modal">
+        <div class="addons-modal-content">
+            <span class="addons-close">&times;</span>
+            <h2>Выберите дополнительные ингредиенты</h2>
+            <form id="addons-form" class="addons-form">
+                <label>
+                    <span>Малина (400 руб.)</span>
+                    <input type="checkbox" name="addons" value="Малина" data-price="400">
+                </label>
+                <label>
+                    <span>Клубника (400 руб.)</span>
+                    <input type="checkbox" name="addons" value="Клубника" data-price="400">
+                </label>
+                <label>
+                    <span>Голубика (400 руб.)</span>
+                    <input type="checkbox" name="addons" value="Голубика" data-price="400">
+                </label>
+                <label>
+                    <span>Черника (400 руб.)</span>
+                    <input type="checkbox" name="addons" value="Черника" data-price="400">
+                </label>
+                <button type="submit" class="btn">Добавить в корзину</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/src/scripts/script.js"></script>
+</body>
+</html>
