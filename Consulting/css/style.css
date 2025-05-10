@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #FEF5E0;
+    color: #2b2b2b;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #9D978A;
+    font-weight: bold;
+  }
+
+  .language-switcher {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .language-switcher button {
+    background-color: #C1A24A;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .language-switcher button:hover {
+    background-color: #9D978A;
+  }
+  
+  
+  .hero {
+    background-color: #C1A24A;
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+
+  .hero-content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Уменьшаем нижний отступ для h1 */
+  }
+  
+  .hero p {
+    margin-top: 0.5rem; /* Уменьшаем верхний отступ для p */
+  }
+  
+  .hero .btn {
+    margin-top: 2rem; /* 👈 Более "воздушный" вариант */
+    background-color: #9D978A;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  
+  .chat-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    background: #FEF5E0;
+    border: 2px solid #C1A24A;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .chat-popup.visible {
+    display: block;
+    animation: fadeInUp 0.3s ease;
+  }
+  
+  .chat-header {
+    background: #C1A24A;
+    color: white;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .chat-body {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .chat-body button {
+    margin-top: 0.5rem;
+    background-color: #9D978A;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  
+  @keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #C1A24A;
+    margin-bottom: 3rem;
+    position: relative;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #C1A24A;
+    margin: 1rem auto 0 auto;
+    border-radius: 2px;
+  }
+  
+  .advantage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+
+  .advantages {
+    background-color: #fff;
+    padding: 5rem 2rem;
+  }
+  
+  .advantage-line {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    scrollbar-width: thin;
+    scrollbar-color: #C1A24A transparent;
+    justify-content: flex-start;
+    
+  }
+  
+  .advantage-item {
+    min-width: 280px;
+    background: #FEF5E0;
+    border-left: 6px solid #C1A24A;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .advantage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .advantage-item h3 {
+    margin-top: 0;
+    color: #C1A24A;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .advantage-item p {
+    color: #2b2b2b;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .advantage-line::-webkit-scrollbar {
+    height: 6px;
+  }
+  .advantage-line::-webkit-scrollbar-thumb {
+    background: #C1A24A;
+    border-radius: 10px;
+  }
+    
+  .services {
+    background-color: #fff;
+    padding: 5rem 2rem;
+  }
+  
+  .container_services {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Центрируем контент */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #C1A24A;
+    margin-top: 0; /* Убираем отступ сверху */
+    margin-bottom: 1rem; /* Меньше отступ снизу для ближе к контенту */
+  }
+  
+  
+  .section-description {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Автоматическое создание колонок */
+    gap: 2rem;
+    margin-top: 80px;
+  }
+  
+  .service-item {
+    background: #FEF5E0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-item h3 {
+    color: #C1A24A;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-item p {
+    color: #2b2b2b;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .service-item .btn {
+    margin-top: 1rem;
+    background-color: #9D978A;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .service-item .btn:hover {
+    background-color: #C1A24A;
+  }
+  
+
+  /* Общий стиль для всей страницы */
+.coming-soon {
+    background-color: #FEF5E0; /* Тот же светлый фон */
+    height: 100vh; /* Вся высота окна */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 0 2rem; /* Добавим немного отступов по бокам */
+    margin: 0; /* Убираем лишние внешние отступы */
+  }
+  
+  /* Контейнер для контента */
+  .coming-soon-content {
+    text-align: center;
+    color: #C1A24A;
+    max-width: 800px; /* Ограничиваем ширину для лучшего восприятия */
+    padding: 2rem;
+    background-color: #fff; /* Белый фон внутри блока */
+    border-radius: 12px; /* Закругленные углы */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+    margin-top: 0; /* Убираем лишний отступ сверху */
+  }
+  
+  /* Заголовок */
+  .coming-soon h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem; /* Уменьшаем отступ снизу */
+  }
+  
+  /* Описание */
+  .description {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem; /* Уменьшаем отступ снизу */
+    color: #2b2b2b;
+  }
+  
+  /* Блок обратного отсчета */
+  .countdown p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .countdown-timer {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #9D978A;
+    margin-bottom: 2rem;
+  }
+  
+  .countdown-timer span {
+    margin: 0 8px;
+  }
+  
+  /* Кнопка */
+  .btn {
+    background-color: #C1A24A;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #9D978A;
+  }
+
+  
+  /* Стиль для раздела "О нас" */
+  .about {
+    background-color: #fff;
+    padding: 5rem 2rem;
+  }
+  
+  .container_about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* Заголовок */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #C1A24A;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Описание */
+  .section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #2b2b2b;
+  }
+  
+  /* Команда */
+  .team {
+    text-align: center;
+  }
+  
+  .team h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #C1A24A;
+    margin-bottom: 2rem;
+  }
+  
+  /* Сетка для членов команды */
+  .team-list {
+    display: flex;
+    justify-content: center; /* Центрируем элементы */
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .team-member {
+    background: #FEF5E0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 280px; /* Можно уменьшить или оставить, в зависимости от потребностей */
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member h4 {
+    font-size: 1.25rem;
+    color: #C1A24A;
+  }
+  
+  .team-member p {
+    font-size: 1rem;
+    color: #2b2b2b;
+  }
+  
+  
+  .faq {
+    padding: 3rem 2rem;
+    background-color: #fff;
+  }
+  
+  .container_faq {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #C1A24A;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .faq-question {
+    background-color: #FEF5E0;
+    border: 2px solid #C1A24A;
+    padding: 1.2rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2b2b2b;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-question:hover {
+    background-color: #C1A24A;
+    color: #fff;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #2b2b2b;
+    line-height: 1.6;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 500px; /* Подгоните значение max-height в зависимости от длины ответа */
+    opacity: 1;
+  }
+  
+  .faq-item.active .faq-question {
+    background-color: #C1A24A;
+    color: #fff;
+  }
+  
+  .faq-question::after {
+    content: "+";
+    float: right;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .faq-question::after {
+    content: "-";
+    transform: rotate(180deg); /* Поворот значка */
+  }
+
+  
+ /* Основной контейнер */
+.container_contacts {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 2rem;
+}
+
+/* Одинаковые карточки */
+.card {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Заголовки одинакового стиля */
+.card h2 {
+    font-size: 2.5rem;
+    color: #C1A24A;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Контент карточки (общий стиль для текста) */
+.card-content p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card-content p strong {
+    color: #C1A24A;
+}
+
+/* Стили для формы */
+.card-content label {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.card-content input,
+.card-content textarea {
+    width: calc(100% - 0.5rem);  /* Убираем отступы */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #C1A24A;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* Чтобы padding не увеличивал размер */
+}
+
+.card-content input:focus,
+.card-content textarea:focus {
+    border-color: #C1A24A;
+    background-color: #fff;
+}
+
+.card-content button {
+    background-color: #C1A24A;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+    background-color: #9D978A;
+}
+
+/* Карта */
+.map-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#response-message {
+    margin-top: 1rem;
+    color: #28a745;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Убедись, что textarea имеет фиксированную ширину */
+.card-content textarea {
+    width: calc(100% - 0.5rem); /* Та же ширина, что и у input */
+    height: 110px;  /* фиксированная высота */
+    resize: none;  /* отключить изменение размера */
+}
+
+  @media (max-width: 768px) {
+    .container_contacts {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  }
+  
